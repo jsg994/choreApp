@@ -3,41 +3,62 @@
 <html>
 <head>
     <base href="/">
-    <title>Angular Bare Bones Project</title>
+    <title>Chore Assigner</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Angular Bare Bones Starter">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/styles/styles.css" rel="stylesheet">
-</head>
-<body>
-    <header class="navbar navbar-inner navbar-fixed-top">
-        <nav class="container">
-            <div class="navbar-header">
-              <span class="app-title">Bet You Won't Click It!</span>
-            </div>
-        </nav>
-    </header>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 
+
+    <script>
+    var choreList = [];
+    function makeNameVar() {
+        var nameVar = document.getElementById("nameInput").value;
+        document.getElementById("printAssignedChore").innerHTML +=  nameVar + ", " + chorePicker(choreList) + "<br>";
+        document.getElementById("printArrayList").innerHTML = choreList.join("<br>");
+    }
+    function chorePicker(chore) {
+       if (choreList.length === 0){
+         return ("looks like your lucky day. There are no more chores left!");
+       } else {
+         var i = Math.floor(Math.random() * chore.length);
+         return chore.splice(i-1,1);
+         return chore[i];
+       }
+    }
+    function makeChoreVar() {
+        var choreVar = document.getElementById("choreInput").value;
+        choreList.push(choreVar)
+        document.getElementById("printArrayList").innerHTML = choreList.join("<br>");
+    }
+    document.getElementById("printArrayList").innerHTML = choreList.join("<br>");
+    </script>
+</head>
+
+<div class="topnav" id="myTopnav">
+  <body>
+  <h1>Chore Assigner</h1>
+    <br/>
+    <br/>
+    <br/>
+    <div class="cat">
+    <img src="https://media.giphy.com/media/3oKIPCSX4UHmuS41TG/giphy.gif" title="cleaning cat" />
+    </div>
     <main class="container">
         <app-root>
             Loading...
         </app-root>
         <br /><br />
     </main>
-
-    <footer>
-        <div class="navbar navbar-fixed-bottom">
-            <div class="navbar-inner footer">
-                <div class="container">
-                    <footer>
-
-                    </footer>
-                </div>
-            </div>
-        </div>
-    </footer>
+<br/>
+<br/>
+<br/>
+<br/>
 
 </body>
+</div>
+</div>
 </html>

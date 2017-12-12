@@ -3,13 +3,14 @@ main {
     position: relative;
     padding-top: 60px;
     text-align: center;
+    background:#DFFCFF
 }
 
 /* Ensure display:flex and others don't override a [hidden] */
 [hidden] { display: none !important; }
 
 .navbar-inner {
-    padding-left: 0px;
+    padding:inherit;
     -webkit-border-radius: 0px;
     border-radius: 0px;
     -webkit-box-shadow: none;
@@ -18,19 +19,25 @@ main {
     background-color: #027FF4;
     background-image: none;
 
+
 }
+
+
+.topnav {
+    background-color: #468CEE;
+    overflow: hidden;
+    padding: 14px 16px;
+}
+
 
 .navbar-inner.toolbar {
     background-color: #fafafa;
 
 }
 
-footer {
-    margin-top: 15px;
-}
 
 .navbar-inner.footer {
-    background-color: #fafafa;
+    background-color: #027FF4;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -59,9 +66,9 @@ footer {
 }
 
 .app-title {
-    align-content: center;
+    text-align: right;
     line-height:50px;
-    font-size:20px;
+    font-size:45px;
     color: white;
 
 }

@@ -1,1 +1,120 @@
 /* You can add global styles to this file, and also import other style files */
+.both-columns {
+    background:#DFFCFF
+}
+
+.columnr {
+    font-family: 'Ubuntu', sans-serif;
+    width: 500px;
+    margin: 0 auto;
+    color: black;
+    text-align:center;
+    overflow: auto;
+    background:#DFFCFF
+}
+
+.columnl {
+  font-family: 'Ubuntu', sans-serif;
+  width: 500px;
+  margin: 0 auto;
+  color: black;
+  text-align:center;
+  overflow: auto;
+  background:#DFFCFF
+
+}
+
+input[type=text] {
+  border: none;
+  background-color: none;
+  outline: 0;
+  font-size: 25px;
+  width: 300px;
+  height: 30px;
+}
+
+input[type=text]:focus {
+  border: none;
+  background-color: none;
+  outline: 0;
+  width: 300px;
+  height: 30px;
+}
+
+.center {
+  height: 40px;
+  width: 300px;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+
+
+
+.btn {
+  background: rgb(66, 184, 221);
+  color: white;
+  border-radius: 1px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+body > div.columnr > p:nth-child(1) > button {
+  background: rgb(66, 184, 221);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+  color: white;
+
+}
+
+#myTopnav > h1 {
+  text-decoration: underline;
+}
+
+
+.choreInput {
+  width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.nameInput {
+  width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+body > div.columnl > p:nth-child(1) > button {
+  background: rgb(66, 184, 221);
+  color: white;
+  border-radius: 1px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+body > div > img{
+  text-align:center;
+
+}
+
+.cat {
+    text-align:center;
+}
+
+
+h1, h2, h3 {
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+h1 {
+  font-size: 60px;
+}
