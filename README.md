@@ -10,4 +10,4 @@
 1. Run `npm install` to install app dependencies
 
 1. Run `ng serve -o` to start the server and launch the app
-# click_app
+
